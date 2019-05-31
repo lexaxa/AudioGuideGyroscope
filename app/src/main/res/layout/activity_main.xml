@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.alexis.audioguide.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="onClick"
+        android:text="@string/open_camera" />
+
+    <Button
+        android:id="@+id/btn_show_gyroscope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_toEndOf="@+id/button"
+
+        android:onClick="onClick"
+        android:text="gyroscope activity" />
+
+    <Button
+        android:id="@+id/btn_show_camera_surface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_margin="8dp"
+        android:onClick="onClick"
+        android:text="camera with surface" />
+
+    <Button
+        android:id="@+id/btn_show_surface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_show_camera_surface"
+        android:layout_margin="8dp"
+        android:onClick="onClick"
+        android:text="open surface" />
+
+    <Button
+        android:id="@+id/btn_show_ah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_show_camera_surface"
+        android:layout_margin="8dp"
+        android:layout_toEndOf="@+id/btn_show_surface"
+        android:onClick="onClick"
+        android:text="open ah activity" />
+
+    <Button
+        android:id="@+id/btn_play_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_show_ah"
+        android:layout_margin="8dp"
+        android:onClick="onClick"
+        android:text="Play - О Петербурге" />
+
+    <Button
+        android:id="@+id/btn_stop_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_show_ah"
+        android:layout_margin="8dp"
+        android:layout_toEndOf="@+id/btn_play_audio"
+        android:onClick="onClick"
+        android:text="Stop Audio" />
+
+    <Button
+        android:id="@+id/btn_play_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_stop_audio"
+        android:layout_margin="8dp"
+        android:onClick="onClick"
+        android:text="Play Service" />
+
+    <Button
+        android:id="@+id/btn_stop_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_stop_audio"
+        android:layout_margin="8dp"
+        android:layout_toEndOf="@+id/btn_play_service"
+        android:onClick="onClick"
+        android:text="Stop Service" />
+
+</RelativeLayout>
